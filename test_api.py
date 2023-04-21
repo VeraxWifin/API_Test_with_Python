@@ -2,7 +2,7 @@ import requests
 import pytest
 
 
-@pytest.mark.apitest2
+@pytest.mark.apitest
 def test_rick_and_morty_params():
     response = requests.get("https://rickandmortyapi.com/api/character", params={"name": "Rick"})
     assert response.status_code == 200
